@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Poppins",sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #2a76e8;
+}
+form{
+    background: #fff;
+    width: 450px;
+    padding:30px;
+    border-radius: 5px;
+}
+
+form header{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 500;
+    color: #2a76e8;
+    margin-top: 10px;
+}
+
+form .url-input{
+    margin: 30px 0;
+}
+
+.url-input .title{
+    font-size: 18px;
+    color: #373737;
+}
+
+.url-input .field{
+    height: 50px;
+    width: 100%;
+    margin-top: 5px;
+    position: relative;
+}
+
+.url-input .field input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #f1f1f7;
+    padding: 0 15px;
+    font-size: 15px;
+    border-bottom: 2px solid #ccc;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.url-input .field .bottom-line{
+    height: 2px;
+    width: 100%;
+    background: #2a76e8;
+    position: absolute;
+    bottom: 0;
+    left:0;
+    transform: scale(0);
+}
+
+.url-input .field input:focus ~ .bottom-line,
+.url-input .field input:valid ~ .bottom-line{
+    transform: scale(1);
+}
+
+form .preview-area{
+    border-radius: 5px;
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    border: 2px dashed #2a76e8;
+}
+
+.preview-area .thumbnail{
+    width:100%;
+    border-radius: 5px;
+    display: none;
+}
+
+.preview-area .icon{
+    color: #2a76e8;
+    font-size: 80px;
+}
+
+.preview-area span{
+    color: #2a76e8;
+    margin-top: 20px;
+    
+
+}
+
+form .download-btn{
+    height: 53px;
+    width: 100%;
+    outline: none;
+    border:none;
+    background: #2a76e8;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+    margin: 30px 0 20px 0;
+    cursor: pointer;
+}
